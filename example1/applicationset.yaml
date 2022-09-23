@@ -3,6 +3,8 @@ kind: ApplicationSet
 metadata:
   name: web
   namespace: argocd
+  labels:
+    name: web
 spec:
   generators:
   - list:
