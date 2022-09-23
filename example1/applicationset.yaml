@@ -18,7 +18,7 @@ spec:
       source:
         repoURL: https://github.com/devops-systems/argocd-test.git
         targetRevision: HEAD
-        path: example1/web/{{namespace}}
+        path: example1
       destination:
         server: '{{"{{"}}url{{"}}"}}'
         namespace: '{{"{{"}}namespace{{"}}"}}'
