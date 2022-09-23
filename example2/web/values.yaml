@@ -1,0 +1,6 @@
+# Default Values for Helm Chart
+
+container:
+  repository: bokovets
+
+replicaCount: 1
