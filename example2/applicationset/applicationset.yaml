@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: web-helm
+  name: helm-web
   namespace: argocd
 spec:
   generators:
@@ -18,7 +18,7 @@ spec:
       project: default
       source:
         helm:
-          releaseName: web-ui
+          releaseName: helm-web-ui
           valueFiles:
             - web/values.yaml
             - web/{{namespace}}-values.yaml
