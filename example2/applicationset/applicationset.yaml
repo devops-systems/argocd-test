@@ -18,6 +18,7 @@ spec:
       project: default
       source:
         helm:
+          releaseName: web-ui
           valueFiles:
             - web/values.yaml
             - web/{{namespace}}-values.yaml
