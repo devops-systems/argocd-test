@@ -21,7 +21,7 @@ spec:
           releaseName: helm-web-ui
           valueFiles:
             - web/values.yaml
-            - web/{{namespace}}-values.yaml
+            - web/{{namespace}}/values.yaml
         repoURL: https://github.com/devops-systems/argocd-test.git
         targetRevision: HEAD
         path: example2
