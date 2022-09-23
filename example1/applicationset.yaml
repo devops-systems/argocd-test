@@ -14,6 +14,8 @@ spec:
   template:
     metadata:
       name: '{{namespace}}-web'
+      labels:
+        name: web
     spec:
       project: default
       source:
