@@ -2,7 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: web
-  namespace: '{{"{{"}}namespace{{"}}"}}'
 spec:
   generators:
   - list:
@@ -13,13 +12,13 @@ spec:
         url: https://kubernetes.default.svc
   template:
     metadata:
-      name: '{{"{{"}}namespace{{"}}"}}-web'
+      name: '{{namespace}}-web'
     spec:
       project: default
       source:
         repoURL: https://github.com/devops-systems/argocd-test.git
         targetRevision: HEAD
-        path: example1
+        path: example1/{{namespace}}
       destination:
-        server: '{{"{{"}}url{{"}}"}}'
-        namespace: '{{"{{"}}namespace{{"}}"}}'
+        server: '{{url}}'
+        namespace: '{{namespace}}'
