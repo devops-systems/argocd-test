@@ -3,6 +3,8 @@ kind: ApplicationSet
 metadata:
   name: helm-web
   namespace: argocd
+  labels:
+    name: helm-web
 spec:
   generators:
   - list:
