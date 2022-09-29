@@ -14,7 +14,7 @@ spec:
         app: web-ui
     spec:
       containers:
-      - image: bokovets/kuber:v2.0
+      - image: bokovets/kuber:v3.0
         name: web-ui
         ports:
         - containerPort: 80
