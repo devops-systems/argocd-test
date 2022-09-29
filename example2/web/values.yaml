@@ -3,4 +3,4 @@
 container:
   repository: bokovets
 
-replicaCount: 1
+replicaCount: 2
